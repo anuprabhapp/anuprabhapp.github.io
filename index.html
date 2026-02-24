@@ -1,16 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Elavarasi Portfolio</title>
+    <title>Anuprabha Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.4);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .hero {
+            padding: 80px 20px;
+        }
+
+        .hero img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 10px;
+            font-size: 25px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: yellow;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: yellow;
+            color: black;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: orange;
+        }
+
+        .section {
+            padding: 60px 20px;
+            background: white;
+            color: black;
+        }
+
+        .skills li {
+            list-style: none;
+            padding: 10px;
+            background: #667eea;
+            margin: 10px auto;
+            width: 220px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f4f4;
+            margin: 15px;
+            padding: 20px;
+            width: 260px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+        }
+
+        @media(max-width:768px){
+            .projects{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Hello, I'm Elavarasi 👋</h1>
-    <p>Computer Science Student</p>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <img src="profile.jpeg" alt="Anuprabha Photo">
+    <h1>Hello, I'm Anuprabha 👋</h1>
+    <p>Computer Science Student | Python & Django Developer</p>
+
+    <div class="social-icons">
+        <a href="https://github.com/23bcs029" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <!-- Replace with your real LinkedIn link -->
+        <a href="https://linkedin.com/in/your-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <a href="Anuprabha_Resume.pdf" class="btn" download>Download Resume</a>
+</div>
+
+<div class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+        Passionate Computer Science student building real-world applications 
+        using Python and Django.
+    </p>
+</div>
+
+<div class="section" id="skills">
     <h2>My Skills</h2>
-    <ul>
+    <ul class="skills">
         <li>Python</li>
         <li>HTML & CSS</li>
         <li>Django</li>
+        <li>Git & GitHub</li>
     </ul>
+</div>
+
+<div class="section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Smart DigiLocker</h3>
+            <p>Django based document storage system.</p>
+            <a href="https://github.com/23bcs029" target="_blank">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Restaurant Reservation System</h3>
+            <p>Online table booking system using PHP & DBMS.</p>
+            <a href="https://github.com/23bcs029" target="_blank">View Project</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: yourmail@gmail.com</p>
+</div>
+
+<footer>
+    © 2026 Anuprabha | Portfolio Website
+</footer>
+
 </body>
 </html>
